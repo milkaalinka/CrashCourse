@@ -21,14 +21,22 @@ public class Main {
         boolean d;
         if (((a*b) | (b*c) | (a*c)) <= (x*y)) d = true;
         else d = false;
-        System.out.println(d);*/
+        System.out.println(d);
 
-        System.out.println("Task 3");
+        System.out.println("Task 3.1");
         System.out.println("Enter radius:");
         int radius = Integer.parseInt(br.readLine());
         double perimeter = 2 * Math.PI * radius;
         double area = Math.PI * radius * radius;
         System.out.println("Perimetr = "+perimeter);
-        System.out.println("Area = "+area);
+        System.out.println("Area = "+area);*/
+
+        System.out.println("Task 3.2");
+        System.out.println("What is your name?");
+        String name = br.readLine();
+        System.out.println("Where do you live, "+ name+"?");
+        String address = br.readLine();
+        System.out.println("Hello "+name+" from "+address);
+
     }
 }
