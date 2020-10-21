@@ -11,7 +11,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 	    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	    System.out.println("Task 56");
+        System.out.println("Task 88");
+        System.out.print("Enter positive number:");
+        int n = Integer.parseInt(br.readLine());
+        int square = n*n;
+        System.out.println(Integer.toString(square).contains("3"));
+        System.out.println("1"+ n +"1");
+	    /*System.out.println("Task 56");
         System.out.println("Enter a,b,c,x,y:");
 	    int a = Integer.parseInt(br.readLine());
 	    int b = Integer.parseInt(br.readLine());
@@ -50,6 +56,6 @@ public class Main {
         System.out.println("For c1 = "+ c1*t1);
         System.out.println("For c2 = "+ c2*t2);
         System.out.println("For c1 = "+ c3*t3);
-        System.out.println("For all together = "+ (c1*t1 + c2*t2 + c3*t3));
+        System.out.println("For all together = "+ (c1*t1 + c2*t2 + c3*t3));*/
     }
 }
