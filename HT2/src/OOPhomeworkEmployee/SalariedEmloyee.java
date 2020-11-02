@@ -13,9 +13,8 @@ public class SalariedEmloyee extends Employee implements Salary {
 
     private String socialSecurityNumber = "Lorem ipsum";
 
-     public SalariedEmloyee(String emloyeeId, String name, String socialSecurityNumber) {
+     public SalariedEmloyee(String emloyeeId, String name) {
          super(emloyeeId, name);
-         this.socialSecurityNumber = socialSecurityNumber;
      }
 
      public String getSocialSecurityNumber() {

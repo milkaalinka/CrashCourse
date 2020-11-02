@@ -12,8 +12,7 @@ public class ContractEmployee extends Employee implements Salary {
         salary = fixedMontlyPayment;
     }
 
-    public ContractEmployee(String employeeId, String name, String federalTaxIdMember) {
+    public ContractEmployee(String employeeId, String name) {
         super(employeeId,name);
-        this.federalTaxIdMember = federalTaxIdMember;
     }
 }

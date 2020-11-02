@@ -1,5 +1,8 @@
 package com.company;
 import OOPhomework.*;
+import OOPhomeworkEmployee.ContractEmployee;
+import OOPhomeworkEmployee.Employee;
+import OOPhomeworkEmployee.SalariedEmloyee;
 
 import java.io.BufferedReader;
 import java.io.BufferedInputStream;
@@ -13,25 +16,22 @@ import static com.sun.tools.doclint.Entity.or;
 public class Main {
 
     public static void main(String[] args) throws IOException {
-        Eagle eagle = new Eagle("grey",3);
-        Swallow swallow = new Swallow("black", 5);
-        Penguin penguin = new Penguin("white", 2);
-        Kiwi kiwi = new Kiwi("green",1);
+        SalariedEmloyee salariedEmpoyee1 = new SalariedEmloyee(
+                "SE-01", "Ivan Ivanovych");
+        ContractEmployee contractEmployee1 = new ContractEmployee(
+                "CE-01", "Vasyl Petrovuch");
+        SalariedEmloyee salariedEmloyee2 = new SalariedEmloyee(
+                "SE-02", "Sergiy Orestovych");
+        ContractEmployee contractEmployee2 = new ContractEmployee(
+                "CE-02", "Pavlo Ilegovych");
 
-        List<Bird> birdList = new ArrayList<>();
-        birdList.add(eagle);
-        birdList.add(swallow);
-        birdList.add(penguin);
-        birdList.add(kiwi);
+        List<Employee>employeeList = new ArrayList<>();
+        employeeList.add(salariedEmpoyee1);
+        employeeList.add(salariedEmloyee2);
+        employeeList.add(contractEmployee1);
+        employeeList.add(contractEmployee2);
 
-        eagle.fly();
-        swallow.fly();
-        penguin.fly();
-        kiwi.fly();
 
-        /*for(Bird bird : birdList) {
-            System.out.print(bird.getFeathers() + " ");
-            System.out.println(bird.getLayEggs() + " ");
-        }*/
+
     }
 }
